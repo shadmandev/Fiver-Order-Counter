@@ -34,11 +34,11 @@ fiver_form.onsubmit = ( (e) => {
                 let min = total_min - ( total_days * 24 * 60 ) - (hours * 60 ) ;
                 let sec = total_sec - ( total_days * 24 * 60 * 60 ) - (hours * 60 * 60 ) - ( min * 60) ;
     
-                mcg.innerHTML = set_mcg('Your Time Start Now.....')
+                mcg.innerHTML = set_mcg('Your Order Time Start Now.....')
     
                 if (sec <= 0 && min <= 0 && hours <= 0 && total_days <= 0 ) {
                     clearInterval(stop_count)
-                    mcg.innerHTML = set_mcg('Your Time Stop.....', 'red')
+                    mcg.innerHTML = set_mcg('Your Order Time Finish.....', 'red')
                     
                 }
     
